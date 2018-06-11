@@ -1,14 +1,15 @@
 require_relative '../lib/grid'
 
 describe "A grid of cells" do
-  let :grid {Grid.new(height, width)}
+  let(:grid) {Grid.new(3, 3)}
 
   it 'exists' do
     expect(grid).to be_truthy
   end
 
   it 'needs a width and height to be created' do
-
+    expect(grid.height).to be_truthy
+    expect(grid.width).to be_truthy
   end
 
   xit 'exposes a collection of cells' do
