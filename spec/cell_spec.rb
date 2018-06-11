@@ -2,12 +2,14 @@ require_relative '../lib/cell'
 
 describe "A cell" do
 
+  let(:cell) {Cell.new}
+
   it 'exists' do
-    Cell.new
+    expect(cell).to be_truthy
   end
 
   it 'is initially alive' do
-
+    expect(cell.alive).to be_truthy
   end
 
   xit 'can die' do
