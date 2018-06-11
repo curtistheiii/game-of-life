@@ -5,4 +5,8 @@ class Cell
     @alive = true
   end
 
+  def kill
+    @alive = false
+  end
+  
 end
