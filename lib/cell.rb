@@ -14,4 +14,8 @@ class Cell
   def tick
 
   end
+
+  def add_neighbor(cell)
+    neighbors << cell
+  end
 end
