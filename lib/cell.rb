@@ -12,7 +12,9 @@ class Cell
   end
 
   def tick
-
+    if number_of_living_neighbors < 2
+      kill
+    end
   end
 
   def add_neighbor(cell)
